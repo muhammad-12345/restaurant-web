@@ -100,7 +100,7 @@ header .nav-links a:hover {
     overflow: hidden;
     /* justify-content: flex-start; */
     text-align: left;
-    padding-inline: 10rem;
+    padding-inline: 19rem;
 }
 
 .hero::before {
@@ -110,26 +110,21 @@ header .nav-links a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.877); 
     z-index: -1;
 }
 
 .hero-content {
     display: flex; 
     flex-direction: column; 
-    align-items: center; 
+    align-items: start; 
     /* text-align: left; */
     /* justify-content: flex-start; */
     z-index: 2;
     max-width: 50%;
-    /* background-color: #ffa500; */
 }
 
 .hero1 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
     z-index: 1;
     max-width: 50%;
     /* background-color: aqua; */
@@ -155,21 +150,22 @@ header .nav-links a:hover {
 }
 
 .hero-heading {
-    display: block;
     font-family: 'Arial Black', sans-serif; 
     font-size: 3rem; 
     line-height: 1.2;
     margin-bottom: 1rem;
-    max-width: 70%;
+    max-width: 100%;
+    /* background-color: #ffa500; */
     /* padding-left: 18rem; */
 }
 
 #hero-text {
-    display: block;
     color: #fff;
-    line-height: 1.3; 
-    max-width: 70%; 
-    text-align: left;
+    font-size: 0.90rem;
+    font-weight: 400;
+    line-height: 24px; 
+    max-width: 100%; 
+    /* align-items: flex-start; */
     margin: 0 auto; 
     /* padding-left: 18.5rem; */
 }
