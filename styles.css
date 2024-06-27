@@ -13,21 +13,24 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+
 }
 
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    /* flex-direction: column; */
-    margin-left: 2rem;
     color: #ffa500;
+    margin-left: 2rem;
 }
-
 
 header .logo-link {
     display: flex;
     align-items: center;
-    margin-left: 2rem; 
+    margin-right: 22.5rem; 
+    /* justify-content: flex-start; */
 }
 
 header .logo-link img {
@@ -37,9 +40,7 @@ header .logo-link img {
 
 header nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* padding: 0 2rem; */
 }
 
 header .nav-menu {
@@ -50,25 +51,22 @@ header .nav-menu {
 header .nav-links {
     list-style: none;
     display: flex;
-    margin-left: 45rem;
-    /* justify-content: space-between; */
-    /* justify-content: flex-end; */
-    /* margin-right: 2rem; */
+    margin-right: auto; 
+    margin-right: 2rem;
 }
 
 header .nav-links li {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 header .nav-links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1rem;
-    /* margin-left: 2rem; */
 }
 
-header .nav-links .home-link{
-    color:#ffa500
+header .nav-links .home-link {
+    color: #ffa500;
 }
 
 header .btn-nav {
@@ -79,28 +77,31 @@ header .btn-nav {
     color: #fff;
     text-transform: uppercase;
     font-size: 1rem;
-    margin-right: 2rem;
+    margin-left: 1rem; 
 }
 
 header .nav-links a:hover {
     color: #ffa500;
 }
 
+
 .hero {
+    position: relative; /* Ensure the hero section is relative */
     background-image: url('images/bg-hero1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: center; 
     color: #fff;
-    position: relative;
-    z-index: 1;
-    padding-left: 3rem;
+    z-index: 1; 
+    overflow: hidden;
+    /* justify-content: flex-start; */
+    text-align: left;
+    padding-inline: 10rem;
 }
-
 
 .hero::before {
     content: '';
@@ -109,18 +110,72 @@ header .nav-links a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); 
     z-index: -1;
 }
 
 .hero-content {
-    text-align: left;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    /* text-align: left; */
+    /* justify-content: flex-start; */
     z-index: 2;
-    margin-left: -40%;
+    max-width: 50%;
+    /* background-color: #ffa500; */
 }
 
+.hero1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    max-width: 50%;
+    /* background-color: aqua; */
+}
+
+.second-pic{
+    position: relative;
+    height: 100vh;
+    margin-bottom: 1rem; 
+    border-radius: 50%; 
+    max-width: 100%;
+    overflow: hidden;
+    width: 500px; 
+    height: 500px;
+    /* top: 132%; 
+    left: 910%;  */
+}
+
+.hero1 img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-heading {
+    display: block;
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 3rem; 
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    max-width: 70%;
+    /* padding-left: 18rem; */
+}
+
+#hero-text {
+    display: block;
+    color: #fff;
+    line-height: 1.3; 
+    max-width: 70%; 
+    text-align: left;
+    margin: 0 auto; 
+    /* padding-left: 18.5rem; */
+}
 
 .btn {
+    display: block;
     background-color: #ffa500;
     border: none;
     padding: 1rem 2rem;
@@ -128,16 +183,6 @@ header .nav-links a:hover {
     color: #fff;
     text-transform: uppercase;
     margin-top: 1rem;
+    /* padding-left: 3rem; */
 }
 
-
-@media (max-width: 768px) {
-    .hero {
-        padding: 2rem 1rem;
-        height: auto; 
-    }
-
-    .hero-text {
-        padding: 1rem;
-    }
-}
