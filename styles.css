@@ -98,7 +98,7 @@ header .nav-links a:hover {
     align-items: center; 
     color: #fff;
     z-index: 1; 
-    overflow: hidden;
+    overflow: auto;
     /* justify-content: flex-start; */
     text-align: left;
     padding-inline: 19rem;
@@ -185,21 +185,28 @@ header .nav-links a:hover {
 
 .boxes{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
     gap: 1rem;
     margin-top: 2rem;
+    /* background-color: #ffa500; */
 }
 
 .box {
     flex: 1;
-    max-width: 25%;
+    max-width: 10%;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 2rem;
-    text-align: center;
+    text-align: left;
+    /* background-color: aqua; */
+}
+
+#chef{
+    background-color: #ffa500;
+    color: #fff;
 }
 
 .box .icon img {
@@ -214,5 +221,7 @@ header .nav-links a:hover {
 
 .box p{
     font-size: 0.9rem;
-    color: #fff;
+    color: #666565;
+    /* max-width: 100%; */
+    line-height: 18px;
 }
