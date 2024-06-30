@@ -548,3 +548,15 @@ header .nav-links a:hover {
     z-index: 2;
     /* background-color: #000; */
 }
+
+.master-chefs{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    max-width: auto;
+    /* background-color: aqua; */
+}
+
+.chefs{
+    justify-content: space-evenly;
+}
