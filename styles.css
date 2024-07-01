@@ -414,6 +414,7 @@ header .nav-links a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
     /* background-color: rgb(167, 210, 26); */
 }
 
@@ -889,19 +890,18 @@ input[type="number"]{
     background-color: #272f41;
     bottom: 0;
     position: 40rem;
-
     z-index: 1000;
     display: flex; 
     justify-content: space-around; 
     align-items: flex-start; 
 }
 
-html, body {
+/* html, body {
     height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .footer-left {
     display: flex;
@@ -932,3 +932,12 @@ html, body {
     padding-top: 1rem;
 }
 
+.start-testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
