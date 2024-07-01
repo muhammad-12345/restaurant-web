@@ -786,3 +786,149 @@ input[type="number"]{
 .book-now:hover {
     background-color: #ffa500;
 }
+
+.testimonial{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+}
+
+.testimonial-box2{
+    position: relative;
+    width: 20rem;
+    height: 15rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-color: #ffa500;
+}
+
+.testimonial-boxes{
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 1rem; */
+    margin-top: -2rem;
+    height: 100%;
+    width: 80rem;
+    margin-bottom: 10rem;
+}
+
+.testimonial-box1 {
+    position: relative;
+    width: 20rem;
+    height: 15rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.double-quotes {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px; 
+    height: 30px; 
+}
+
+.comment {
+    margin-top: 50px; 
+    text-align: start;
+    font-family: Poppins;
+}
+
+/* Styling for customer name and image */
+.customer-name {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+    height: 4rem;
+    /* background-color: aqua; */
+}
+
+.customer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    /* background-color: #0f172b; */
+}
+
+.name h5 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+    /* padding-top: 1rem; */
+}
+
+.name p{
+    /* line-height: 2rem; */
+    /* padding-bottom: 4rem; */
+    text-align: center;
+    margin: 0;
+    margin-top: 0.2rem;
+}
+
+.footer{
+    width: 93.5rem;
+    background-color: #272f41;
+    bottom: 0;
+    position: 40rem;
+
+    z-index: 1000;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-left p{
+    color: #fff;
+}
+
+.footer-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+    background-color: #555;
+}
+
+.footer-right {
+    text-align: right;
+    align-items: center;
+    margin-right: 2rem;
+    padding-top: 1rem;
+}
+
