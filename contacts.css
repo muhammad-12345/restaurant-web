@@ -301,13 +301,12 @@ header .nav-links a:hover {
     align-items: center;    
     /* height: 100vh;   */
     max-width: 100%;
-    /* background-color: aqua; */
+    /* background-color: rgb(100, 248, 41); */
 }
 
 .reservation-form{
     display: flex;
     padding: 0%;
-    margin: 0%;
     width: 50%;  
     /* height: 100%;        */
     box-sizing: border-box;
@@ -316,6 +315,18 @@ header .nav-links a:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+#map-id{
+    /* background-color: #ffa500; */
+    height: 28rem;
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
 }
 
 .reservation-form h3{
@@ -334,32 +345,26 @@ header .nav-links a:hover {
 
 form {
     display: flex;
+    /* justify-content: space-between; */
     flex-direction: column;
     gap: 15px;
-    width: 43rem;
-    height: 27rem;
-    margin: 0 auto;
+    width: 40rem;
+    height: 100%;
     font-family: Arial, sans-serif;
     /* background-color: aqua; */
 }
 
+#form-id{
+    margin-right: 10%;
+}
+
 .reservation-inputs{
     display: flex;
-    gap: 40px;
+    gap: 5rem;
     justify-content: flex-start;
     /* background-color: #ffa500; */
 }
 
-/* input[type="text"],
-input[type="number"],
-input[type="datetime-local"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-} */
 input[type="text"]{
     width: 15rem;
     height: 3.5rem;
@@ -371,35 +376,22 @@ input[type="text"]{
     text-align: start;
 }
 
-/* Center-align the placeholder text */
 input::placeholder {
     text-align: start;
 }
 
-input[type="datetime-local"]{
-    width: 15rem;
-    height: 3.5rem;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+#box-size{
+    width: 19rem;
 }
 
-input[type="number"]{
-    width: 15rem;
-    height: 3.5rem;
-    padding: 10px;
-    font-size: 16px;
-    /* border: 1px solid #ccc; */
-    border-radius: 4px;
-    box-sizing: border-box;
+#subject-field{
+    width: 40rem;
+    height: 4rem;
 }
-
 
 .large-input {
     display: flex;
-    width: 43rem;
+    width: 40rem;
     /* padding: 10px; */
     font-size: 16px;
     border: 1px solid #ccc;
@@ -410,10 +402,10 @@ input[type="number"]{
 
 #special-req{
     width: 43rem;
-    height: 8rem;
+    height: 13rem;
 }
 
-.book-now {
+.send-msg {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -421,11 +413,11 @@ input[type="number"]{
     background-color: #ffa500;
     color: white;
     cursor: pointer;
-    width: 43rem;
+    width: 40rem;
     height: 3.25rem;
 }
 
-.book-now:hover {
+.send-msg:hover {
     background-color: #ffa500;
 }
 
