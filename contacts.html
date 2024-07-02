@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contacts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo-link"><img src="images/navbar-logo.png" alt="Restoran"></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+            <button class="btn-nav">Book a Table</button>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-heading">Contact Us</h1>
+            <ul class="links">
+                <a href="index.html" class="home-link">HOME</a> / <a href="contacts.html" class="contact-link">CONTACT</a>
+            </ul>
+        </div>
+    </section>
+    <div class="contact-page">
+        <div class="contact-heading">
+            <h3><img src="images/Horizontal Divider.png">Contact Us<img src="images/Horizontal Divider.png"></h3>
+            <h1><b>Contact for any Query</b></h1>
+            <div class="images">
+                <div class="category-item">
+                    <div class="book-heading">
+                        <h3>Booking<img src="images/Horizontal Divider.png"></h3>
+                    </div>
+                    <div class="booking">
+                        <img src="images/email.png" alt="email">
+                        <span id="sp1">booking@example.com</span>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <div class="book-heading">
+                        <h3>General<img src="images/Horizontal Divider.png"></h3>
+                    </div>
+                    <div class="booking">
+                        <img src="images/email.png" alt="email">
+                        <span id="sp1">general@example.com</span>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <div class="book-heading">
+                        <h3>Technical<img src="images/Horizontal Divider.png"></h3>
+                    </div>
+                    <div class="booking">
+                        <img src="images/email.png" alt="email">
+                        <span id="sp1">tech@example.com</span>
+                    </div>
+                </div>
+            </div>
+            <section class="reservation">
+                <div class="reservation-form" id="map-id">
+                    <img src="images/map.png" alt="couple" id="map">
+                </div>
+                <div class="reservation-form">
+                    <form>
+                        <div class="reservation-inputs">
+                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Your Email">
+                        </div>
+                        <div class="reservation-inputs">
+                            <input type="datetime-local" placeholder="Date & Time">
+                            <input list="numberOptions" id="numberInput" name="numberInput" type="number" placeholder="Number of People">
+                            <datalist id="numberOptions">
+                                <option value="2">
+                                <option value="5">
+                                <option value="10">
+                            </datalist>
+                        </div>
+                        <div class="large-input">
+                            <input type="text" placeholder="Special Request" id="special-req">
+                        </div>
+                        <button class="book-now">BOOK NOW</button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer-left">
+                    <p>© Your Sitename, All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="index.html" class="footer-button">Home</a>
+                    <a href="contacts.html" class="footer-button">Contact</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
