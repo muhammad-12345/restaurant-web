@@ -433,15 +433,15 @@ font-weight: bolder ;
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #ffa500; /* Yellow background */
-    border-radius: 50%;
+    background-color: #ffa500; 
+    /* border-radius: 50%; */
     z-index: 1000;
     transition: background-color 0.3s;
     text-decoration: none;
 }
 
 .back-to-top:hover {
-    background-color: #ffb732; /* Slightly lighter yellow on hover */
+    background-color: #ffb732; 
 }
 
 .arrow-container img {
