@@ -6,37 +6,47 @@ body {
     overflow-y: auto;
 }
 
-header {
-    background-color: rgba(43, 48, 46, 0.705);
-    color: #fff;
-    padding: 1rem 0;
-    /* position: fixed; */
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex; 
-    justify-content: space-around; 
-    align-items: flex-start; 
-
+.hero-wrapper {
+    position: relative;
+    background-image: url('images/bg-hero1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffa500;
-    margin-left: 2rem;
+.hero-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9); /* Dim overlay */
+    z-index: 1;
+}
+
+header {
+    background: none;
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+    top: 0;
+    z-index: 1002;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative; /* Relative to hero-wrapper */
 }
 
 header .logo-link {
     display: flex;
     align-items: center;
-    margin-right: 22.5rem; 
-    /* justify-content: flex-start; */
+    margin-right: 22.5rem;
 }
 
 header .logo-link img {
-    height: 40px; 
-    width: auto; 
+    height: 40px;
+    width: auto;
 }
 
 header nav {
@@ -44,15 +54,10 @@ header nav {
     align-items: center;
 }
 
-header .nav-menu {
-    display: flex;
-    align-items: center;
-}
-
 header .nav-links {
     list-style: none;
     display: flex;
-    margin-right: auto; 
+    margin-right: auto;
     margin-right: 2rem;
 }
 
@@ -78,28 +83,22 @@ header .btn-nav {
     color: #fff;
     text-transform: uppercase;
     font-size: 1rem;
-    margin-left: 1rem; 
+    margin-left: 1rem;
 }
 
 header .nav-links a:hover {
     color: #ffa500;
 }
 
-
 .hero {
-    position: relative; /* Ensure the hero section is relative */
-    background-image: url('images/bg-hero1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
     color: #fff;
-    z-index: 1; 
+    z-index: 2;
     overflow: auto;
-    /* justify-content: flex-start; */
     text-align: left;
     padding-inline: 19rem;
 }
@@ -111,16 +110,13 @@ header .nav-links a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.877); 
     z-index: -1;
 }
 
 .hero-content {
-    display: flex; 
-    flex-direction: column; 
-    align-items: start; 
-    /* text-align: left; */
-    /* justify-content: flex-start; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     z-index: 2;
     max-width: 50%;
 }
@@ -128,47 +124,40 @@ header .nav-links a:hover {
 .hero1 {
     z-index: 1;
     max-width: 50%;
-    /* background-color: aqua; */
 }
 
-.second-pic{
+.second-pic {
     position: relative;
     height: 100vh;
-    margin-bottom: 1rem; 
-    border-radius: 50%; 
+    margin-bottom: 1rem;
+    border-radius: 50%;
     max-width: 100%;
     overflow: hidden;
-    width: 500px; 
+    width: 500px;
     height: 500px;
-    /* top: 132%; 
-    left: 910%;  */
 }
 
 .hero1 img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .hero-heading {
-    font-family: 'Arial Black', sans-serif; 
-    font-size: 3rem; 
+    font-family: 'Arial Black', sans-serif;
+    font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 1rem;
     max-width: 100%;
-    /* background-color: #ffa500; */
-    /* padding-left: 18rem; */
 }
 
 #hero-text {
     color: #fff;
     font-size: 0.90rem;
     font-weight: 400;
-    line-height: 24px; 
-    max-width: 100%; 
-    /* align-items: flex-start; */
-    margin: 0 auto; 
-    /* padding-left: 18.5rem; */
+    line-height: 24px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .btn {
@@ -180,7 +169,6 @@ header .nav-links a:hover {
     color: #fff;
     text-transform: uppercase;
     margin-top: 1rem;
-    /* padding-left: 3rem; */
 }
 
 .boxes{
