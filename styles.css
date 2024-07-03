@@ -12,6 +12,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .hero-wrapper::before {
@@ -35,7 +39,9 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    position: relative; /* Relative to hero-wrapper */
+    position: relative; 
+    margin-top: -4%;
+    padding: 0%;
 }
 
 header .logo-link {
@@ -91,7 +97,7 @@ header .nav-links a:hover {
 }
 
 .hero {
-    position: relative;
+    /* position: relative;
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
@@ -100,7 +106,10 @@ header .nav-links a:hover {
     z-index: 2;
     overflow: auto;
     text-align: left;
-    padding-inline: 19rem;
+    padding-inline: 19rem; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hero::before {
@@ -116,7 +125,8 @@ header .nav-links a:hover {
 .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     z-index: 2;
     max-width: 50%;
 }
@@ -128,7 +138,7 @@ header .nav-links a:hover {
 
 .second-pic {
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     margin-bottom: 1rem;
     border-radius: 50%;
     max-width: 100%;
@@ -137,31 +147,40 @@ header .nav-links a:hover {
     height: 500px;
 }
 
-.hero1 img {
+.second-pic img{
+    width: 80%;
+}
+
+/* .hero1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .hero-heading {
     font-family: 'Arial Black', sans-serif;
     font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 1rem;
-    max-width: 100%;
+    color: #fff;
+    width: 70%;
+    /* max-width: 100%; */
 }
 
 #hero-text {
     color: #fff;
     font-size: 0.90rem;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 24px;
-    max-width: 100%;
+    /* max-width: 100%; */
     margin: 0 auto;
+    width: 28rem;
+    padding: 0%;
+    margin: 0%;
 }
 
 .btn {
-    display: block;
+    display: flex;
     background-color: #ffa500;
     border: none;
     padding: 1rem 2rem;
@@ -169,10 +188,12 @@ header .nav-links a:hover {
     color: #fff;
     text-transform: uppercase;
     margin-top: 1rem;
+    margin-right: 45%;
 }
 
 .boxes{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -693,7 +714,7 @@ form {
 .reservation-inputs{
     display: flex;
     gap: 40px;
-    justify-content: flex-start;
+    justify-content: space-between;
     /* background-color: #ffa500; */
 }
 
@@ -708,7 +729,7 @@ input[type="datetime-local"] {
     box-sizing: border-box;
 } */
 input[type="text"]{
-    width: 15rem;
+    width: 17rem;
     height: 3.5rem;
     padding: 10px;
     font-size: 16px;
@@ -724,7 +745,7 @@ input::placeholder {
 }
 
 input[type="datetime-local"]{
-    width: 15rem;
+    width: 17rem;
     height: 3.5rem;
     padding: 10px;
     font-size: 16px;
@@ -734,7 +755,7 @@ input[type="datetime-local"]{
 }
 
 input[type="number"]{
-    width: 15rem;
+    width: 17rem;
     height: 3.5rem;
     padding: 10px;
     font-size: 16px;
@@ -880,8 +901,15 @@ input[type="number"]{
     position: 40rem;
     z-index: 1000;
     display: flex; 
-    justify-content: space-around; 
-    align-items: flex-start; 
+    justify-content: center; 
+    /* align-items: flex-start;  */
+}
+
+.footer-inner-div{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 75%;
 }
 
 /* html, body {
