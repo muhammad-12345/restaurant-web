@@ -126,7 +126,7 @@ header .nav-links a:hover {
 .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     z-index: 2;
     max-width: 50%;
@@ -200,7 +200,7 @@ header .nav-links a:hover {
     /* padding: 2rem; */
     gap: 10px;
     /* margin-top: 2rem; */
-    height: auto;
+    height: 448px;
     width: 100%;
     gap: 30px;
     padding: 50px 0px;
@@ -234,15 +234,20 @@ header .nav-links a:hover {
 }
 
 .box h5 {
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-top: 1rem;
+    margin-left: 24px;
+    margin-bottom:0px;
 }
-
+.box img{
+    margin-left: 24px;
+}
 .box p{
-    font-size: 0.9rem;
+    font-size: 16px;
     color: #666565;
     /* max-width: 100%; */
     line-height: 18px;
+    margin-left: 24px;
 }
 
 .About {
@@ -827,7 +832,7 @@ input[type="number"]{
     display: flex;
     justify-content: space-evenly;
     /* gap: 1rem; */
-    margin-top: -2rem;
+    margin-top: 48.12px;
     height: 100%;
     width: 80rem;
     margin-bottom: 10rem;
@@ -1074,13 +1079,23 @@ input[type="number"]{
             color:#ffa500
         }
 
+        header{
+            margin-top: 0%;
+        }
+
+        header nav{
+            height: 66px;
+        }
+
         header .logo-link {
         
             margin-right: 7rem;
         }
 
-        .boxes{
+        .boxes {
+            /* display: flex; */
             flex-direction: column;
+            height: auto;
         }
 
         .box{
@@ -1274,7 +1289,8 @@ input[type="number"]{
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 226vh;
+            height: 1120px;
+            width: 425px;
             /* padding: 4rem 2rem; */
             /* background-color: rgba(0, 0, 0, 0.055); */
             /* margin-top: 3rem; */
@@ -1321,13 +1337,19 @@ input[type="number"]{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: flex-start;
+            justify-content: space-between;
             max-width: 100%;
+            /* width: 425px; */
+            padding-bottom: 0%;
             /* background-color: brown; */
+            margin-bottom: 0%;
+            padding-left: 15px;
         }
 
         .about-font{
             margin-top: 0%;
+            margin: 0%;
+            padding: 0%;
         }
 
         .title-about {
@@ -1335,7 +1357,9 @@ input[type="number"]{
             font-family: Poppins;
             font-size: 1.8rem;
             font-weight: 700;
-            margin-top: -2rem;
+            /* margin-top: -2rem; */
+            margin: 0%;
+            padding: 0%;
             justify-content: center;
             width: 335px;
             /* background-color: aqua; */
@@ -1345,9 +1369,11 @@ input[type="number"]{
             /* max-width: 80%; */
             line-height: 1.2rem;
             /* max-width: 90%; */
+            padding-top: 10px;
             /* background-color: #666565; */
             width: 346px;
             font-size: 15px;
+            margin: 0%;
         }
 
         .chefs {
@@ -1379,7 +1405,7 @@ input[type="number"]{
         }
 
         .master-chefs {
-            height: 1945px;   
+            height: auto;   
             margin-top: 2rem;
         }
 
@@ -1400,7 +1426,7 @@ input[type="number"]{
             align-items: center;
             /* margin-top: -2rem; */
             height: 100%;
-            width: 80rem;
+            width: auto;
             /* background-color: rgb(165, 90, 60); */
         }
 
@@ -1409,7 +1435,7 @@ input[type="number"]{
             align-items: start;
             justify-content: center;
             flex-wrap: wrap;
-            height: 1000px;
+            height: 1026.5px;
         }
 
         .start-testimonial {
@@ -1428,9 +1454,9 @@ input[type="number"]{
             justify-content: flex-start;
             align-items: center;
             gap: 1rem;
-            margin-top: -2rem;
+            /* margin-top: -2rem; */
             height: 100%;
-            width: 80rem;
+            width: auto;
             margin-bottom: 10rem;
             margin-top: 0rem;
         }
@@ -1469,10 +1495,10 @@ input[type="number"]{
             font-size: 14px;
             flex-direction: column;
             justify-content: space-between;
-            width: 425px;
+            width: 385px;
             /* max-width: 100%; */
             margin-bottom: 20px;
             /* background-color: #ff6600; */
-            padding: 20px;
+            /* padding: 20px; */
         }
     }
