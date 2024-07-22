@@ -151,6 +151,16 @@ header .nav-links a:hover {
     color: #ffa500;
 }
 
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-heading{
+    width: 1296px;
+    height: 603px;
+}
 
 .contact-heading h3{
     display: flex;
@@ -184,16 +194,6 @@ header .nav-links a:hover {
 .images{
     
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 18rem;
-    
-    /* margin-bottom: 2rem; */
-    height: 100%;
-    width: 100%;
-    /* padding-bottom: 2rem; */
-    /* border-bottom: 2px solid #ffa500; */
-    /* background-color: #ac2626; */
 }
 
 .book-heading{
@@ -313,7 +313,7 @@ form {
 
 .reservation-inputs{
     display: flex;
-    gap: 5rem;
+    gap: 32px;
     justify-content: flex-start;
     /* background-color: #ffa500; */
 }
@@ -381,7 +381,7 @@ input::placeholder {
     width: 100%;
     background-color: #272f41;
     bottom: 0;
-    position: 40rem;
+    position: fixed;
     z-index: 1000;
     display: flex; 
     justify-content: space-around; 
@@ -489,11 +489,13 @@ font-weight: bolder ;
             font-size: 28px !important;
         }
 
-        .images{
-            display:block !important;
+        .images {
+            display: block !important;
             align-items: center !important;
-            text-align: center;
-            padding-left: 0px ;
+            /* text-align: start; */
+            /* padding-left: 30px; */
+            margin-left: 20px;
+            width: auto;
         }
 
         .contact-heading{

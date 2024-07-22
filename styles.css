@@ -577,12 +577,17 @@ header .nav-links a:hover {
 .master-chefs{
     height: 638px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* background-color: aqua; */
 }
 
 .team-chefs {
     display: flex;
     justify-content: space-evenly;
+    gap: 30px;
+    width: 1130px;
     /* gap: 1rem; */
     /* margin-top: -2rem; */
     /* height: 100%; */
@@ -599,8 +604,8 @@ rem
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    gap: 1rem;
-    margin-top: 2rem;
+    /* gap: 1rem; */
+    /* margin-top: 2rem; */
     /* border-radius: 10px; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.08), 0 8px 16px rgba(0, 0, 0, 0.06), 0 16px 32px rgba(0, 0, 0, 0.04);
     margin-bottom: 2rem;
@@ -694,7 +699,7 @@ rem
     font-family: Pacifico;
     font-size: 2rem;
     color: #ffa500;
-    padding-left: 2rem;
+    padding-left: 0;
 }
 
 .reservation-form h1{
@@ -703,27 +708,28 @@ rem
     font-family: Poppins;
     font-size: 40px;
     margin-top: -10px;
+    padding-left: 0;
 }
 
-#couple{
-    width: 47rem;
-    height: 44.5rem;
+#couple {
+    width: 896px;
+    height: 615px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 43rem;
-    height: 27rem;
-    margin: 0 auto;
+    width: 555px;
+    height: 423px;
+    /* margin: 0 auto; */
     font-family: Arial, sans-serif;
     /* background-color: aqua; */
 }
 
 .reservation-inputs{
     display: flex;
-    gap: 40px;
+    gap: 31px;
     justify-content: space-between;
     /* background-color: #ffa500; */
 }
@@ -739,8 +745,8 @@ input[type="datetime-local"] {
     box-sizing: border-box;
 } */
 input[type="text"]{
-    width: 17rem;
-    height: 3.5rem;
+    width: 263px;
+    height: 55px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -755,8 +761,8 @@ input::placeholder {
 }
 
 input[type="datetime-local"]{
-    width: 17rem;
-    height: 3.5rem;
+    width: 263px;
+    height: 55px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -765,8 +771,8 @@ input[type="datetime-local"]{
 }
 
 input[type="number"]{
-    width: 17rem;
-    height: 3.5rem;
+    width: 263px;
+    height: 55px;
     padding: 10px;
     font-size: 16px;
     /* border: 1px solid #ccc; */
@@ -777,7 +783,7 @@ input[type="number"]{
 
 .large-input {
     display: flex;
-    width: 43rem;
+    width: 553px;
     /* padding: 10px; */
     font-size: 16px;
     border: 1px solid #ccc;
@@ -787,8 +793,8 @@ input[type="number"]{
 }
 
 #special-req{
-    width: 43rem;
-    height: 8rem;
+    width: 553px;
+    height: 98px;
 }
 
 .book-now {
@@ -799,8 +805,8 @@ input[type="number"]{
     background-color: #ffa500;
     color: white;
     cursor: pointer;
-    width: 43rem;
-    height: 3.25rem;
+    width: 553px;
+    height: 56px;
 }
 
 .book-now:hover {
@@ -1064,9 +1070,9 @@ input[type="number"]{
         display:none !important;
     }
 
-    .hero-wrapper{
-        width:100% !important;
-        height: 554px !important;
+    .hero-wrapper {
+        width: 100% !important;
+        height: 513px !important;
     }
 
     .hamburger{
@@ -1106,7 +1112,7 @@ input[type="number"]{
             display: flex;
             flex-direction: column;
             /* justify-content: center; */
-            height: 270vh;
+            height: 1125px;
             padding: 2rem 2rem;
             background-color: #fff;
         }
@@ -1301,8 +1307,8 @@ input[type="number"]{
         .combined {
             display: flex;
             flex-direction: column;
-            /* align-items: center; */
-            justify-content: space-around;
+            align-items: center;
+            justify-content: center;
             max-width: 1200px;
             width: 100%;
             height: 100%;
@@ -1311,11 +1317,13 @@ input[type="number"]{
 
         .grid-photo {
             display: grid;
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             gap: 10px;
             padding: 10px;
+            /* max-width: 50%; */
             /* background-color: blueviolet; */
-            width: 20px;
+            max-width: none;
         }
 
         .image1 {
@@ -1364,6 +1372,15 @@ input[type="number"]{
             width: 335px;
             /* background-color: aqua; */
         }
+
+        .item img {
+            width: 85px;
+            height: 85px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 5px ;
+        }
+
 
         #about-para {
             /* max-width: 80%; */
@@ -1500,5 +1517,18 @@ input[type="number"]{
             margin-bottom: 20px;
             /* background-color: #ff6600; */
             /* padding: 20px; */
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .item {
+            /* display: flex; */
+            /* align-items: center; */
+            width: 48%;
+            margin-bottom: 20px;
+            /* border: 1px solid #ddd; */
+            /* padding: 10px; */
+            border-radius: 5px;
+            padding: 0%;
         }
     }
